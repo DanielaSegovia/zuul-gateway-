@@ -11,16 +11,16 @@ import org.springframework.stereotype.Service;
 public class PersonaServiceFacadeImpl implements PersonaServiceFacade {
 
     @Autowired
-    private PersonaService estudianteService;
+    private PersonaService personaService;
 
     @Override
-    public Persona guardarEstudiante(Persona persona) {
-       return estudianteService.guardarEstudiante(persona);
+    public Persona guardarPersona(Persona persona) {
+       return personaService.guardarPersona(persona);
     }
 
     @Override
     public Persona findByDocumento(String documento) {
-        return estudianteService.findByDocumento(documento);
+        return personaService.findByDocumento(documento);
     }
     
 }

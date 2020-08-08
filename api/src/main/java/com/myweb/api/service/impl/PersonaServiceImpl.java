@@ -11,16 +11,16 @@ import org.springframework.stereotype.Service;
 public class PersonaServiceImpl implements PersonaService {
 
     @Autowired
-    private PersonaRepository estudianteRepository;
+    private PersonaRepository personaRepository;
 
     @Override
-    public Persona guardarEstudiante(Persona persona) {
-        return estudianteRepository.save(persona);
+    public Persona guardarPersona(Persona persona) {
+        return personaRepository.save(persona);
     }
     
     @Override
     public Persona findByDocumento(String documento) {
-        return estudianteRepository.findByDocumento(documento);
+        return personaRepository.findByDocumento(documento);
     }
 
     

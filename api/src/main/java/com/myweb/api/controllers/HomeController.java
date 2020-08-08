@@ -32,7 +32,7 @@ public class HomeController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public Persona guardarEstudiante(@RequestBody @Validated Persona persona) {
-        return personaServiceFacade.guardarEstudiante(persona);
+        return personaServiceFacade.guardarPersona(persona);
     }
     
     
