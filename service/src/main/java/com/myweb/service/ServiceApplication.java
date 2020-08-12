@@ -1,13 +1,14 @@
-package com.myweb.api;
+package com.myweb.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.jms.annotation.EnableJms;
 
 @SpringBootApplication
-public class ApiApplication {
-    
+@EnableJms
+public class ServiceApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(ApiApplication.class, args);
+        SpringApplication.run(ServiceApplication.class, args);
     }
 }
